@@ -1,7 +1,12 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { FormsComponent } from './forms/forms.component';
+import { AssignmentFormsComponent } from './assignment-forms/assignment-forms.component';
 
-const routes: Routes = [];
+const routes: Routes = [
+  { path: '', component: FormsComponent },
+  { path: 'forms', component: AssignmentFormsComponent },
+];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
